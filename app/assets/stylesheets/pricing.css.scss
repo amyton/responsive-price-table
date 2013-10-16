@@ -3,17 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 */
 .container {
-  max-width:  960px;
 
-  .plan {
+  @media all and (max-width: 420px) {
+  	max-width:  960px;
+
+  	.plan {
     height: 500px;
     float: left;
     width: 300px / 960px * 100%;
-  }
+	  }
 
-  .plan.premium {
-    margin: 0 (30px / 960px * 100%);
-  }
+	  .plan.premium {
+	    margin: 0 (30px / 960px * 100%);
+	  }
 
-  img { max-width: 100%; }
+	  img { max-width: 100%; }
+  }
 }
